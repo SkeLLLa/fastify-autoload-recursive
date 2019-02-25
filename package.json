@@ -1,0 +1,69 @@
+{
+  "name": "fastify-autoload-recursive",
+  "version": "1.0.0",
+  "description": "Fastify recursive plugins autoloader",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "doc": "docs",
+    "lib": "dist",
+    "test": "test"
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.ts"
+  ],
+  "standard-version": {
+    "scripts": {
+      "prerelease": "npm run test",
+      "postbump": "echo Version: v$npm_package_version",
+      "postchangelog": "replace \"https://github.com/SkeLLLa/\" \"https://gitlab.com/m03geek/\" CHANGELOG.md",
+      "posttag": "git push --follow-tags origin $npm_package_config_releaseBranch"
+    }
+  },
+  "scripts": {
+    "lint": "eslint . && tslint -p ./ && tslint -p ./test",
+    "lint:fix": "eslint . --fix && tslint -p ./ --fix && tslint -p ./test --fix",
+    "test": "npm audit && npm run lint && npm run unit",
+    "unit": "jest",
+    "build": "tsc",
+    "prerelease": "npm run typedoc",
+    "release": "git add -A && standard-version -A",
+    "typedoc": "rm -rf ./docs/* && typedoc --excludeExternals --name \"$npm_package_name\" --readme none --mode file --includeDeclarations --theme markdown --out ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SkeLLLa/fastify-autoload-recursive.git"
+  },
+  "keywords": [
+    "fastify",
+    "prometheus",
+    "metrics"
+  ],
+  "author": "m03geek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/m03geek/fastify-autoload-recursive/issues"
+  },
+  "homepage": "https://gitlab.com/m03geek/fastify-autoload-recursive#README",
+  "dependencies": {
+    "fastify-plugin": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.14",
+    "@types/node": "^10.12.26",
+    "eslint": "^5.14.1",
+    "eslint-config-google": "^0.12.0",
+    "fastify": "^1.0.0",
+    "jest": "^24.1.0",
+    "replace": "^1.0.1",
+    "standard-version": "^5.0.0",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.0.1",
+    "tslint": "^5.12.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "typedoc": "^0.14.0",
+    "typedoc-plugin-markdown": "^1.1.26",
+    "typescript": "^3.3.3"
+  }
+}
