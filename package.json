@@ -1,6 +1,6 @@
 {
   "name": "fastify-autoload-recursive",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.0",
   "description": "Fastify recursive plugins autoloader",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
