@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.0.0-rc.2](https://gitlab.com/m03geek/fastify-autoload-recursive/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2019-02-26)
+
+
+### Features
+
+* **schema:** prefix generation fix ([e1740ed](https://gitlab.com/m03geek/fastify-autoload-recursive/commit/e1740ed))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 # [1.0.0-rc.1](https://gitlab.com/m03geek/fastify-autoload-recursive/compare/v1.0.0-rc.0...v1.0.0-rc.1) (2019-02-26)
 
 
