@@ -75,19 +75,24 @@ const fastifyAutoLoadRecursivePlugin: Plugin<
     }
 
     const dirName = path.basename(dirPath);
-    let prefix = dirName === path.basename(dir) ? '' : dirName;
-    if (parentPrefix) {
-      prefix = `${parentPrefix}/${prefix}`;
-    }
+    const prefix =
+      dirName === path.basename(dir)
+        ? parentPrefix
+        : [parentPrefix, dirName].join('/');
 
     for (const f of routeFiles) {
       const fPath = path.join(dirPath, f);
+      const isSchema = schemaPattern.test(fPath);
       const s = await statAsync(fPath);
       if (s.isFile() && path.extname(f) === '.js') {
         const plugin = require(fPath);
         const pluginOpts = {};
         autoPrefix || plugin.autoPrefix
-          ? Object.assign(pluginOpts, {prefix}, dynamicOptions)
+          ? Object.assign(
+              pluginOpts,
+              {prefix: isSchema ? prefix.replace('/', '.') : prefix},
+              dynamicOptions
+            )
           : Object.assign(pluginOpts, dynamicOptions);
         fastify.register(plugin, pluginOpts);
       }

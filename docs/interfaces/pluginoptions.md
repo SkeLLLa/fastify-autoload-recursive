@@ -15,6 +15,7 @@
 * [ignorePattern](pluginoptions.md#ignorepattern)
 * [options](pluginoptions.md#options)
 * [optionsPattern](pluginoptions.md#optionspattern)
+* [prefix](pluginoptions.md#prefix)
 * [schemaPattern](pluginoptions.md#schemapattern)
 
 ---
@@ -80,6 +81,19 @@ ___
 Pattern for files containing options (will extend `options`)
 
 *__default__*: /options?.(j\|t)s$/i
+
+___
+<a id="prefix"></a>
+
+### `<Optional>` prefix
+
+**● prefix**: *`undefined` \| `string`*
+
+*Defined in plugin.ts:34*
+
+Add prefix to all routes
+
+*__default__*: ''
 
 ___
 <a id="schemapattern"></a>
