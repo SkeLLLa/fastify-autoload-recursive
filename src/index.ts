@@ -31,6 +31,7 @@ const fastifyAutoLoadRecursivePlugin: Plugin<
 ) {
   const {
     dir,
+    prefix,
     autoPrefix,
     ignorePattern,
     schemaPattern = /schemas?.(j|t)s$/i,
@@ -97,7 +98,7 @@ const fastifyAutoLoadRecursivePlugin: Plugin<
   }
 
   if (await existsAsync(dir)) {
-    await handleDirectory(dir);
+    await handleDirectory(dir, prefix);
   }
 };
 

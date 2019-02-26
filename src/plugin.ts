@@ -27,4 +27,9 @@ export interface PluginOptions {
    * @default {}
    */
   options?: {[key: string]: any};
+  /**
+   * Add prefix to all routes
+   * @default ''
+   */
+  prefix?: string;
 }
