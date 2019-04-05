@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.0.0-rc.3](https://gitlab.com/m03geek/fastify-autoload-recursive/compare/v1.0.0-rc.2...v1.0.0-rc.3) (2019-04-05)
+
+
+### Features
+
+* **opts:** make opts fn follow plugin format ([4e2cf1f](https://gitlab.com/m03geek/fastify-autoload-recursive/commit/4e2cf1f))
+
+
+
 # [1.0.0-rc.2](https://gitlab.com/m03geek/fastify-autoload-recursive/compare/v1.0.0-rc.1...v1.0.0-rc.2) (2019-02-26)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "fastify-autoload-recursive",
-  "version": "1.0.0-rc.2",
+  "version": "1.0.0-rc.3",
   "description": "Fastify recursive plugins autoloader",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -50,20 +50,20 @@
     "fastify-plugin": "^1.5.0"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.14",
-    "@types/node": "^10.12.26",
-    "eslint": "^5.14.1",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^11.0.0",
+    "eslint": "^5.16.0",
     "eslint-config-google": "^0.12.0",
-    "fastify": "^1.0.0",
-    "jest": "^24.1.0",
-    "replace": "^1.0.1",
-    "standard-version": "^5.0.0",
-    "ts-jest": "^24.0.0",
-    "ts-node": "^8.0.1",
-    "tslint": "^5.12.1",
+    "fastify": "^2.0.0",
+    "jest": "^24.7.1",
+    "replace": "^1.1.0",
+    "standard-version": "^5.0.2",
+    "ts-jest": "^24.0.1",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.15.0",
     "tslint-eslint-rules": "^5.4.0",
     "typedoc": "^0.14.0",
-    "typedoc-plugin-markdown": "^1.1.26",
-    "typescript": "^3.3.3"
+    "typedoc-plugin-markdown": "^1.1.27",
+    "typescript": "^3.4.1"
   }
 }
