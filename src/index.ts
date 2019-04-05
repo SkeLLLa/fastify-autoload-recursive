@@ -70,7 +70,7 @@ const fastifyAutoLoadRecursivePlugin: Plugin<
 
       Object.assign(
         dynamicOptions,
-        typeof opts === 'function' ? opts.call(fastify, options) : opts
+        typeof opts === 'function' ? opts.call(fastify, fastify, options) : opts
       );
     }
 
