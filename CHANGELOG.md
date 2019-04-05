@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.0.0-rc.4](https://gitlab.com/m03geek/fastify-autoload-recursive/compare/v1.0.0-rc.3...v1.0.0-rc.4) (2019-04-05)
+
+
+### Bug Fixes
+
+* replace fix ([610a881](https://gitlab.com/m03geek/fastify-autoload-recursive/commit/610a881))
+
+
+
 # [1.0.0-rc.3](https://gitlab.com/m03geek/fastify-autoload-recursive/compare/v1.0.0-rc.2...v1.0.0-rc.3) (2019-04-05)
 
 
