@@ -90,7 +90,7 @@ const fastifyAutoLoadRecursivePlugin: Plugin<
         autoPrefix || plugin.autoPrefix
           ? Object.assign(
               pluginOpts,
-              {prefix: isSchema ? prefix.replace('/', '.') : prefix},
+              {prefix: isSchema ? prefix.split('/').join('.') : prefix},
               dynamicOptions
             )
           : Object.assign(pluginOpts, dynamicOptions);
